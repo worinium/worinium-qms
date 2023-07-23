@@ -1,5 +1,8 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Regions;
+using QMS.Shared.Contracts;
+using QMS.Shared.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace QMS.Module.StreamingSection.ViewModels
 {
-    public class DisplayStreamingSectionViewModel : BindableBase
+    public class DisplayStreamingSectionViewModel : RegionViewModelBase
     {
         private string _message;
         public string Message
@@ -17,9 +20,15 @@ namespace QMS.Module.StreamingSection.ViewModels
             set { SetProperty(ref _message, value); }
         }
 
-        public DisplayStreamingSectionViewModel()
+        public DisplayStreamingSectionViewModel(IRegionManager regionManager, IMessageService messageService) :
+            base(regionManager)
         {
-            Message = "DisplayStreamingSection Prism Module";
+            Message = messageService.GetMessage();
+            // Message = "DisplayStreamingSection Prism Module";
+        }
+        public override void OnNavigatedTo(NavigationContext navigationContext)
+        {
+            //do something
         }
     }
 }

@@ -1,5 +1,8 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Regions;
+using QMS.Shared.Contracts;
+using QMS.Shared.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace QMS.Module.DisplayServicesSection.ViewModels
 {
-    public class DisplayServicesSectionViewModel : BindableBase
+    public class DisplayServicesSectionViewModel : RegionViewModelBase
     {
         private string _message;
         public string Message
@@ -17,9 +20,16 @@ namespace QMS.Module.DisplayServicesSection.ViewModels
             set { SetProperty(ref _message, value); }
         }
 
-        public DisplayServicesSectionViewModel()
+        public DisplayServicesSectionViewModel(IRegionManager regionManager, IMessageService messageService) :
+            base(regionManager)
         {
-            Message = "View A from your Prism Module";
+            Message = messageService.GetMessage();
+
+            // Message = "DisplayHeaderSection Prism Module";
+        }
+        public override void OnNavigatedTo(NavigationContext navigationContext)
+        {
+            //do something
         }
     }
 }

@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QM.Module.DisplayTicketSection.ViewModels
+namespace QMS.Module.DisplayHeaderSection.ViewModels
 {
-    public class DisplayTicketSectionViewModel : RegionViewModelBase
+    public class DisplayHeaderSectionViewModel : RegionViewModelBase
     {
         private string _message;
         public string Message
@@ -20,12 +20,12 @@ namespace QM.Module.DisplayTicketSection.ViewModels
             set { SetProperty(ref _message, value); }
         }
 
-        public DisplayTicketSectionViewModel(IRegionManager regionManager, IMessageService messageService) :
+        public DisplayHeaderSectionViewModel(IRegionManager regionManager, IMessageService messageService) :
             base(regionManager)
         {
             Message = messageService.GetMessage();
 
-            // Message = "DisplayTicketSection Prism Module";
+            // Message = "DisplayHeaderSection Prism Module";
         }
         public override void OnNavigatedTo(NavigationContext navigationContext)
         {

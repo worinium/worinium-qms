@@ -5,7 +5,10 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="" MinHeight="600" MinWidth="600" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        xmlns:shared="clr-namespace:QMS.Shared;assembly=QMS.Shared"
+        Title="" MinHeight="600" MinWidth="600" WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
     <Grid x:Name="WaitingHeaderMenu">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
@@ -24,12 +27,12 @@
         </Grid.RowDefinitions>
         <Grid Grid.ColumnSpan="2">
             <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" Background="{x:Null}" Height="20" Margin="3,0,0,0" >
-                <Image Source="../Content/Resources/favicon.ico"/>
+                <Image Source="/Resources/favicon.ico"/>
             </StackPanel>
 
         </Grid>
-        <ContentControl  Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" prism:RegionManager.RegionName="DisplayQueueDetailsSectionRegion" Margin="0,0,0,189.2" />
-        <ContentControl  Grid.Row="1"  prism:RegionManager.RegionName="DisplayStreamingSectionRegion" Margin="0,0,0,189.2" Grid.RowSpan="2" Grid.Column="1"/>
-        <ContentControl Grid.Row="2" prism:RegionManager.RegionName="DisplayTicketCurrentTicketSectionRegion" Margin="0,0.4,0,0.2" Grid.ColumnSpan="2" />
+        <ContentControl  Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" prism:RegionManager.RegionName="{x:Static shared:RegionNames.DisplayQueueDetailsSectionRegion}" Margin="0,0,0,189.2" />
+        <ContentControl  Grid.Row="1"  prism:RegionManager.RegionName="{x:Static shared:RegionNames.DisplayStreamingSectionRegion}" Margin="0,0,0,189.2" Grid.RowSpan="2" Grid.Column="1"/>
+        <ContentControl Grid.Row="2" prism:RegionManager.RegionName="{x:Static shared:RegionNames.DisplayTicketCurrentTicketSectionRegion}" Margin="0,0.4,0,0.2" Grid.ColumnSpan="2" />
     </Grid>
 </Window>

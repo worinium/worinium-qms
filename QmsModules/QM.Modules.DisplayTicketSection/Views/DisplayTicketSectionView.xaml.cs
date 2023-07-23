@@ -24,5 +24,10 @@ namespace QMS.Module.DisplayTicketSection.Views
         {
             InitializeComponent();
         }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

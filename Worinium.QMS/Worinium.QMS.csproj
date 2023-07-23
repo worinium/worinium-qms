@@ -11,7 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\QmsModules\QM.Modules.DisplayTicketSection\QMS.Module.DisplayCurrentTicketSection.csproj" />
     <ProjectReference Include="..\QmsModules\QMS.Module.DisplayQueueDetailsSection\QMS.Module.DisplayQueueDetailsSection.csproj" />
-    <ProjectReference Include="..\QmsModules\QMS.Modules.DisplayRibbonSection\QMS.Module.DisplayHeaderSection.csproj" />
+    <ProjectReference Include="..\QmsModules\QMS.Modules.DisplayHeaderSection\QMS.Modules.DisplayHeaderSection.csproj" />
     <ProjectReference Include="..\QmsModules\QMS.Modules.DisplayServicesSection\QMS.Module.DisplayServicesSection.csproj" />
     <ProjectReference Include="..\QmsModules\QMS.Modules.StreamingSection\QMS.Module.DisplayStreamingSection.csproj" />
     <ProjectReference Include="..\Shared\QMS.Shared\QMS.Shared.csproj" />

@@ -5,12 +5,38 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300"
+             d:DesignHeight="300" d:DesignWidth="1100"
              xmlns:prism="http://prismlibrary.com/"
-             prism:ViewModelLocator.AutoWireViewModel="True" >
-    <Grid>
-        <TextBlock Text="{Binding Message}"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center" />
-    </Grid>
+             prism:ViewModelLocator.AutoWireViewModel="True"  Loaded="UserControl_Loaded">
+
+    <Border BorderBrush="Black" BorderThickness="2">
+        <Grid x:Name="footerGrid" Grid.Row="2" ShowGridLines="True">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="BlueViolet"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="52*"/>
+                <RowDefinition Height="159*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Label HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White"  FontSize="28" x:Name="lblTicket" VerticalContentAlignment="Center" Content="Ticket Number" HorizontalContentAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label x:Name="lblSeat" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="28" VerticalContentAlignment="Center" Margin="0,0,-0.4,0" HorizontalContentAlignment="Center" Content="Seat Number"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" x:Name="QueueNumberLbl" BorderThickness="0" Content="---"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock  VerticalAlignment="Center" Foreground="White"  Margin="0,0,-0.4,0" HorizontalAlignment="Center" TextAlignment="Center"><Run  FontSize="40" x:Name="serviceNameTxt" /><LineBreak/><Run FontSize="40" x:Name="seatNumberTxt"/></TextBlock>
+            </Grid>
+        </Grid>
+    </Border>
 </UserControl>
