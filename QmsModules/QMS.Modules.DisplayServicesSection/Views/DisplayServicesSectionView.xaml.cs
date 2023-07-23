@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace QMS.Modules.DisplayRibbonSection.Views
+namespace QMS.Module.DisplayServicesSection.Views
 {
     /// <summary>
     /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class DisplayServicesSectionView : UserControl
     {
-        public ViewA()
+        public DisplayServicesSectionView()
         {
             InitializeComponent();
         }

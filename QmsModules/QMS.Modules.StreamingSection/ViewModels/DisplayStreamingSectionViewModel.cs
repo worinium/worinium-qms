@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QMS.Modules.DisplayRibbonSection.ViewModels
+namespace QMS.Module.StreamingSection.ViewModels
 {
-    public class ViewAViewModel : BindableBase
+    public class DisplayStreamingSectionViewModel : BindableBase
     {
         private string _message;
         public string Message
@@ -17,9 +17,9 @@ namespace QMS.Modules.DisplayRibbonSection.ViewModels
             set { SetProperty(ref _message, value); }
         }
 
-        public ViewAViewModel()
+        public DisplayStreamingSectionViewModel()
         {
-            Message = "View A from your Prism Module";
+            Message = "DisplayStreamingSection Prism Module";
         }
     }
 }

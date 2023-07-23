@@ -9,15 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worinium.QMS", "Worinium.QM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A23608AB-D73F-4CBE-A8D8-73D31B7A54BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QM.Modules.DisplayTicketSection", "QmsModules\QM.Modules.DisplayTicketSection\QM.Modules.DisplayTicketSection.csproj", "{3A096D8D-A6EE-4516-833D-74CC5F837183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Module.DisplayCurrentTicketSection", "QmsModules\QM.Modules.DisplayTicketSection\QMS.Module.DisplayCurrentTicketSection.csproj", "{3A096D8D-A6EE-4516-833D-74CC5F837183}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Module.DisplayQueueDetailsSection", "QmsModules\QMS.Module.DisplayQueueDetailsSection\QMS.Module.DisplayQueueDetailsSection.csproj", "{A5A8AD67-D2F9-4A18-AD93-DDEA8A239383}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Modules.DisplayHeaderSection", "QmsModules\QMS.Modules.DisplayRibbonSection\QMS.Modules.DisplayHeaderSection.csproj", "{49DBCF86-36EE-44A5-ABFD-B1E50B514041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Module.DisplayHeaderSection", "QmsModules\QMS.Modules.DisplayRibbonSection\QMS.Module.DisplayHeaderSection.csproj", "{49DBCF86-36EE-44A5-ABFD-B1E50B514041}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Modules.DisplayServicesSection", "QmsModules\QMS.Modules.DisplayServicesSection\QMS.Modules.DisplayServicesSection.csproj", "{7F1B9484-0C1C-473F-BDE3-F3AA6B15D9EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Module.DisplayServicesSection", "QmsModules\QMS.Modules.DisplayServicesSection\QMS.Module.DisplayServicesSection.csproj", "{7F1B9484-0C1C-473F-BDE3-F3AA6B15D9EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Modules.DisplayStreamingSection", "QmsModules\QMS.Modules.StreamingSection\QMS.Modules.DisplayStreamingSection.csproj", "{EC9655F1-CF4D-4DE3-A5C2-797F9080FACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMS.Module.DisplayStreamingSection", "QmsModules\QMS.Modules.StreamingSection\QMS.Module.DisplayStreamingSection.csproj", "{EC9655F1-CF4D-4DE3-A5C2-797F9080FACC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMS.Shared", "Shared\QMS.Shared\QMS.Shared.csproj", "{3F429CD1-EABA-4270-A050-C02630AB9514}"
 EndProject

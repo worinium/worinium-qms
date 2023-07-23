@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace QMS.Modules.StreamingSection.Views
+namespace QMS.Module.DisplayTicketSection.Views
 {
     /// <summary>
     /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class DisplayTicketSectionView : UserControl
     {
-        public ViewA()
+        public DisplayTicketSectionView()
         {
             InitializeComponent();
         }

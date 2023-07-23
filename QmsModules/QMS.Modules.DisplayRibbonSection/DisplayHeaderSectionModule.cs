@@ -1,19 +1,18 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
-using QMS.Module.DisplayTicketSection;
 using QMS.Shared;
 
-namespace QM.Modules.DisplayTicketSection
+namespace QMS.Modules.DisplayRibbonSection
 {
-    public class DisplayTicketSectionModule : IModule
+    public class DisplayHeaderSectionModule : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
             // use the containerProvider to retrieve the instance of the Prism RegionManager
             // and register the view in this module with a specific region in the app
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion(RegionNames.DisplayTicketCurrentTicketSectionRegion, typeof(QMS.Module.DisplayTicketSection.Views.DisplayTicketSectionView));
+            regionManager.RegisterViewWithRegion(RegionNames.DisplayHeaderSectionRegion, typeof(Module.DisplayHeaderSection.Views.DisplayHeaderSectionView));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
@@ -23,6 +22,5 @@ namespace QM.Modules.DisplayTicketSection
 
             //containerRegistry.Register<MyApplication.Infrastructure.ISomeService, SomeService>();
         }
-
     }
 }

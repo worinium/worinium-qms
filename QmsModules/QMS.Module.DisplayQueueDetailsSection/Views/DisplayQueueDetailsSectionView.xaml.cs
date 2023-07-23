@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace QMS.Shared
+namespace QMS.Module.DisplayQueueDetailsSection.Views
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class DisplayQueueDetailsSectionView : UserControl
     {
-        public UserControl1()
+        public DisplayQueueDetailsSectionView()
         {
             InitializeComponent();
         }
